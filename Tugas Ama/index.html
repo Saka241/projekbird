@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <!-- Tombol Start muncul sebelum game berjalan -->
+      <button id="startButton">Start</button>
+      <!-- Burung dan pipa akan di-render oleh JavaScript -->
+      <div id="bird"></div>
+      <div id="game"></div>
+    </div>
+
+    <!-- Skor dan tombol restart -->
+    <div id="score-panel">Skor: <span id="score">0</span></div>
+    <button id="restart-btn">Restart</button>
+    <div id="audio-container" style="display: none">
+      <audio id="flap-sound" src="assets/audio/flap.wav"></audio>
+      <audio id="score-sound" src="assets/audio/score.wav"></audio>
+      <audio id="hit-sound" src="assets/audio/hit.wav"></audio>
+    </div>
+
+    <!-- Load modul JS -->
+    <script type="module" src="js/game.js"></script>
+  </body>
+</html>
